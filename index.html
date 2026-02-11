@@ -7,63 +7,29 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
-<style>
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.mySlides {
-  display: none
-}
-</style>
-
-<style>
-.w3-montserrat {
-  font-family: 'Montserrat', serif;
-}
-</style>
-
-<style>
-ol{
-  padding-left: 20px;
-}
-
-ul{
-  padding-left: 20px;
-}
-
-li{
-  margin: 10px 0;  
-}
-</style>
-
-<style>
-.fa-researchgate:hover {
-    color: rgb(0, 204, 187);
-}
-</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="styles.css">
 
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card-2 w3-border-bottom w3-border-dark-grey w3-montserrat">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-   
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">CONTACT</a>
-	<a href="#awards" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">AWARDS</a>
-    <a href="#service" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">SERVICE</a>
-	<a href="#mentoring" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">MENTORING</a>
-	<a href="#publications" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small">PUBLICATIONS</a>
-	<a href="#" class="w3-bar-item w3-button w3-padding-large w3-right">HOME</a>
-	
+  <div class="w3-bar w3-montserrat" style="background-color: #2c3e50;">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu" style="color: white !important;"><i class="fa fa-bars"></i></a>
+
+	<a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+	<a href="#publications" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
+	<a href="#mentoring" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MENTORING</a>
+    <a href="#service" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICE</a>
+	<a href="#awards" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AWARDS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+
   </div>
 </div>
 
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-black w3-border-bottom w3-border-dark-grey w3-montserrat w3-hide w3-hide-large w3-hide-medium w3-top" onclick="myFunction()" style="margin-top:46px">
+<div id="navDemo" class="w3-bar-block w3-montserrat w3-hide w3-hide-large w3-hide-medium w3-top" onclick="myFunction()" style="margin-top:60px;background-color:#2c3e50;box-shadow:0 4px 8px rgba(0,0,0,0.1)">
   <a href="#publications" class="w3-bar-item w3-button w3-padding-large">PUBLICATIONS</a>
   <a href="#mentoring" class="w3-bar-item w3-button w3-padding-large">MENTORING</a>
   <a href="#awards" class="w3-bar-item w3-button w3-padding-large">AWARDS</a>
@@ -72,32 +38,60 @@ li{
 </div>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:1080px;margin-top:46px">
+<div style="max-width:1200px;margin:80px auto 0 auto;padding:0 1rem">
 
     <!-- The Home Section -->
-  <div class="w3-container w3-content w3-center" style="max-width:1080px" id="intro">
-	
-	<h1 class="w3-wide"><b>GUSTAVO ANSALDI OLIVA</b></h1>
-	<br>
-	
-	<div class="w3-third">
-		<img src="http://www.gaoliva.com/gus.jpg" class="w3-round w3-left w3-margin-bottom" alt="Gustavo Ansaldi Oliva" style="width:66%">	
+  <div class="w3-content" id="intro">
+
+	<h1 class="w3-wide w3-center"><b>GUSTAVO ANSALDI OLIVA</b></h1>
+
+	<div class="social-links">
+		<a href="https://www.linkedin.com/in/gustavo-ansaldi-oliva-22097753/" target="_blank" class="social-link linkedin">
+			<i class="fab fa-linkedin"></i>
+			<span>LinkedIn</span>
+		</a>
+		<a href="https://scholar.google.com/citations?user=SS7uASUAAAAJ&hl=en" target="_blank" class="social-link scholar">
+			<i class="fas fa-graduation-cap"></i>
+			<span>Google Scholar</span>
+		</a>
+		<a href="https://www.researchgate.net/profile/Gustavo-Oliva-2" target="_blank" class="social-link researchgate">
+			<i class="fab fa-researchgate"></i>
+			<span>ResearchGate</span>
+		</a>
 	</div>
-	
-	<div class="w3-twothird w3-justify w3-large">
-		Hi! I am an Adjunct Professor at <a href="http://www.queensu.ca">Queen's University</a> in Canada. I currently lead the <b>blockchain research team</b> at the <a href="https://sail.cs.queensu.ca">Software Analysis and Intelligence Lab (SAIL)</a>. My goal is to enable the development of *cost-effective* decentralized applications (DApps) on top of popular programmable blockchain platforms (e.g., Ethereum). 
-		
-		<p> In addition to blockchain, I also conduct empirical studies in the fields of software ecosystems (e.g., dependency management in npm), code analytics (e.g., new lenses for Java code analysis), and explanaible AI (e.g., consistent interpretation of models).</p>
-			
-		<p>Prior to becoming an adjunct at Queen's, I worked as a research fellow at the same university under the supervision of prof. <a href="http://research.cs.queensu.ca/~ahmed">Dr. Ahmed Hassan</a>. I received my PhD from the <a href="http://www.ime.usp.br">University of São Paulo (USP)</a> in Brazil under the supervision of prof. <a href="http://www.ime.usp.br/~gerosa">Dr. Marco Gerosa</a>.
+
+	<div class="w3-row">
+		<div class="w3-col m4 l3">
+			<img src="http://www.gaoliva.com/gus-blurred.jpg" class="w3-round w3-margin-bottom" alt="Gustavo Ansaldi Oliva" style="width:100%;max-width:200px">
+		</div>
+
+		<div class="w3-col m8 l9">
+
+		Hi, I'm a Principal Researcher at <a href="https://www.huawei.com/en/">Huawei Canada</a> and an Adjunct Professor at <a href="http://www.queensu.ca">Queen's University</a>.
+
+		<p>At Huawei, I <b>lead teams building LLM training and evaluation pipelines</b> aimed at improving model capabilities in real-world software engineering tasks. My main research interests include SE4AI, AI4SE, and agentic software engineering. I am also interested in software ecosystems, software analytics, and programmable blockchains.</p>
+
+		<p>Before joining Queen's as an Adjunct Professor, I was a Research Fellow at the same university under the supervision of Prof. <a href="http://research.cs.queensu.ca/~ahmed">Ahmed Hassan</a>. I earned my PhD from the <a href="http://www.ime.usp.br">University of São Paulo (USP)</a> in Brazil under the supervision of Prof. <a href="http://www.ime.usp.br/~gerosa">Marco Gerosa</a>. Before joining Huawei, I worked for IBM Brazil and Hewlett Packard Enterprise (HPE).</p>
+
+		</div>
 	</div>
   </div>
   
-  <div class="w3-white" id="publications">	
-	<div class="w3-container w3-content w3-center w3-padding-32 w3-large" style="max-width:1080px">
+  <div class="w3-content" id="publications">
+	<div class="w3-container w3-center w3-large">
 		<h2 class="w3-wide w3-center w3-montserrat"><b style="color:#488AC7">PUBLICATIONS</b></h2>
 		<!--<h6 class="w3-center w3-montserrat">(citations: 253, h-index: 10, i10-index: 10)</h6>-->
-		
+
+		<!-- Tab Toggle UI -->
+		<div class="publications-toggle" role="tablist">
+			<button class="tab-button active" role="tab" aria-selected="true"
+					data-view="by-type" id="tab-by-type">By Type</button>
+			<button class="tab-button" role="tab" aria-selected="false"
+					data-view="by-year" id="tab-by-year">By Year</button>
+		</div>
+
+		<!-- By Type View (existing publications) -->
+		<div id="view-by-type" class="publication-view">
 		<!-- Journal Papers -->
 		<h3 class="w3-left-align w3-montserrat">Journal Papers</h3>
 		<div class="w3-justify">
@@ -111,7 +105,7 @@ li{
 
 				<li> <b>[EMSE 24] A Large-Scale Exploratory Study on the Proxy Pattern in Ethereum.</b> Amir Mohammad Ebrahimi, <u>Gustavo A. Oliva</u>, Ahmed E. Hassan. Springer Empirical Software Engineering (EMSE), 2024. <a class="fab fa-researchgate fa-lg" style="text-decoration: none" href="https://www.researchgate.net/publication/370441114_A_Large-Scale_Exploratory_Study_on_the_Proxy_Pattern_in_Ethereum"></a>
 
-				<li> <b>[ARXIV 24] Rethinking Software Engineering in the Foundation Model Era: A Curated Catalogue of Challenges in the Development of Trustworthy FMware. </b> Ahmed E. Hassan, Dayi Lin, Gopi Krishnan Rajbahadur, Keheliya Gallaba, Filipe R. Cogo, Boyuan Chen, Haoxiang Zhang, Kishanthan Thangarajah, <u>Gustavo A. Oliva</u>, Jiahuei Lin, Wali Mohammad Abdullah, Zhen Ming Jiang. Arxiv 2024 (arXiv:2402.15943). <a href="https://arxiv.org/abs/2402.15943"><img src="arxiv-logo.svg" width="25" height="25"></a>
+				<li> <b>[ARXIV 24] Rethinking Software Engineering in the Foundation Model Era: A Curated Catalogue of Challenges in the Development of Trustworthy FMware. </b> Ahmed E. Hassan, Dayi Lin, Gopi Krishnan Rajbahadur, Keheliya Gallaba, Filipe R. Cogo, Boyuan Chen, Haoxiang Zhang, Kishanthan Thangarajah, <u>Gustavo A. Oliva</u>, Jiahuei Lin, Wali Mohammad Abdullah, Zhen Ming Jiang. Arxiv 2024 (arXiv:2402.15943). <a class="ai ai-arxiv ai-lg" style="text-decoration: none" href="https://arxiv.org/abs/2402.15943"></a>
 
 				<li> <b>[EMSE 23] Using Knowledge Units of Programming Languages to Recommend Reviewers for Pull Requests: An Empirical Study. </b> Md. Ahasanuzzaman, <u>Gustavo A. Oliva</u>, Ahmed E. Hassan. Springer Empirical Software Engineering (EMSE), 2023. <a class="fab fa-researchgate fa-lg" style="text-decoration: none" href="https://www.researchgate.net/publication/376955956_Using_knowledge_units_of_programming_languages_to_recommend_reviewers_for_pull_requests_an_empirical_study"></a>
 
@@ -180,7 +174,7 @@ li{
 
 				<li> <b>[CRIWG 14] Using Structural Holes Metrics from Communication Networks to Predict Change Dependencies.</b> Igor S. Wiese, Rodrigo T. Kuroda, Douglas N. R. Junior, Reginaldo Ré, <u>Gustavo A. Oliva</u>, Marco A. Gerosa. International Conference on Collaboration and Technology (CRIWG), 2014.
 
-				<li> <b>[ICWS 13] A Change Impact Analysis Approach for Workflow Repository Management.</b><u>Gustavo A. Oliva</u>, Marco A. Gerosa, Dejan S. Milojicic, Virginia Smith. International Conference on Web Services (ICWS), 2013.
+				<li> <b>[ICWS 13] A Change Impact Analysis Approach for Workflow Repository Management. </b><u>Gustavo A. Oliva</u>, Marco A. Gerosa, Dejan S. Milojicic, Virginia Smith. International Conference on Web Services (ICWS), 2013.
 				
 				<li> <b>[CSMR 13] What do the Asserts in a Unit Test Tell us about Code Quality? A Study on Open Source and Industrial Projects.</b> Maurício F. Aniche, <u>Gustavo A. Oliva</u>, Marco A. Gerosa. European Conference on Software Maintenance and Evolution (CSMR), 2013.
 				
@@ -209,17 +203,25 @@ li{
 		
 			<!-- A numbered list -->
 			<ol reversed>			
-				<li> <b>Change Coupling between Software Artifacts: Learning from Past Changes.</b> <u>Gustavo A. Oliva</u> and Marco A. Gerosa. The Art and Science of Analyzing Software Data, ed. Christian Bird, Tim Menzies, and Thomas Zimmermann. Morgan Kaufmann, 1st edition, 2015.
+				<li> <b>[BOOK 15] Change Coupling between Software Artifacts: Learning from Past Changes.</b> <u>Gustavo A. Oliva</u> and Marco A. Gerosa. The Art and Science of Analyzing Software Data, ed. Christian Bird, Tim Menzies, and Thomas Zimmermann. Morgan Kaufmann, 1st edition, 2015.
 				
-				<li> <b>An Integrated Development and Runtime Environment for the Future Internet</b> Amira B. Hamida, Fabio Kon, <u>Gustavo A. Oliva</u>, Carlos E. M. dos Santos, Jean-Pierre Lorré, Marco Autili, Guglielmo de Angelis, Apostolo Zarras, Nikolaos Georgantas, Valérie Issarny, and Antonia Bertolino. FIA: The Future Internet Assembly – From Promises to Reality. Springer Berlin Heidelberg, 2012.
+				<li> <b>[BOOK 12] An Integrated Development and Runtime Environment for the Future Internet</b> Amira B. Hamida, Fabio Kon, <u>Gustavo A. Oliva</u>, Carlos E. M. dos Santos, Jean-Pierre Lorré, Marco Autili, Guglielmo de Angelis, Apostolo Zarras, Nikolaos Georgantas, Valérie Issarny, and Antonia Bertolino. FIA: The Future Internet Assembly – From Promises to Reality. Springer Berlin Heidelberg, 2012.
 			</ol>
 		</div>
+		</div>
+		<!-- End By Type View -->
+
+		<!-- By Year View (dynamically populated) -->
+		<div id="view-by-year" class="publication-view" style="display: none;">
+			<!-- Dynamically populated by JavaScript -->
+		</div>
+
 	</div>
   </div>
   
     
-  <div class="w3-white" id="mentoring">	
-	<div class="w3-container w3-content w3-center w3-padding-32 w3-large" style="max-width:1080px">
+  <div class="w3-content" id="mentoring">
+	<div class="w3-container w3-center w3-large">
 		
 		<h2 class="w3-wide w3-center w3-montserrat"><b style="color:#488AC7">MENTORING</b></h2>
 		
@@ -261,17 +263,20 @@ li{
 	</div>
   </div>
   
-  <div class="w3-white" id="service">	
-	<div class="w3-container w3-content w3-center w3-padding-32 w3-large" style="max-width:1080px">
+  <div class="w3-content" id="service">
+	<div class="w3-container w3-center w3-large">
 		
 		<h2 class="w3-wide w3-center w3-montserrat"><b style="color:#488AC7">SERVICE</b></h2>
 
 		<!-- Program committee -->
-		<h3 class="w3-left-align w3-montserrat">Committees</h3>
+		<h3 class="w3-left-align w3-montserrat">Conference Committees</h3>
 		<div class="w3-justify">
 			<ul>
-				<li> <a href="https://conf.researchr.org/committee/icse-2026/icse-2026-research-track-research-track">ICSE 2026 program committee (main track, two submission cycles)</a>
-				<li> <a href="https://conf.researchr.org/committee/saner-2025/saner-2025-papers-program-committee">SANER 2025 program committee (main track)</a>	
+				<li> <a href="https://conf.researchr.org/committee/icse-2027/icse-2027-research-track-program-committee">ICSE 2027 main track program committee</a>
+				<li> <a href="https://2026.aiwareconf.org/committee/aiware-2026-papers-program-committee">AIware 2026 main track program committee</a>
+				<li> <a href="https://conf.researchr.org/committee/icse-2026/icse-2026-research-track-research-track">ICSE 2026 main track program committee</a>
+				<li> <a href="https://conf.researchr.org/committee/icse-2026/icse-2026-industry-challenge-track-industry-challenge">ICSE 2026 industry challenge track program committee</a>
+				<li> <a href="https://conf.researchr.org/committee/saner-2025/saner-2025-papers-program-committee">SANER 2025 main track program committee</a>	
 			</ul>
 		</div>
 
@@ -293,24 +298,24 @@ li{
 		<h3 class="w3-left-align w3-montserrat">Manuscript reviewing</h3>
 		<div class="w3-justify">
 			<ul>
-				<li> Reviewer for the IEEE Transactions on Software Engineering (TSE) journal
-				<li> Reviewer for the Springer Empirical Software Engineering (EMSE) journal
-				<li> Reviewer for the ACM Transactions on Software Engineering (TOSEM) journal
-				<li> Reviewer for the Journal of Systems and Software (JSS)
-				<li> Reviewer for the Journal of Software: Practice and Experience (SPE)
-				<li> Reviewer for the PeerJ Computer Science journal
-				<li> Reviewer for IEEE Transactions on Services Computing (TSC) journal
-				<li> Reviewer for the IEEE Transactions on Systems, Man and Cybernetics: Systems (SMCA) journal
-				<li> Reviewer for the ACM Transactions on the Web (TWEB) journal
-				<li> Reviewer for Software Testing, Verification and Reliability (STVR)
+				<li> IEEE Transactions on Software Engineering (TSE) journal
+				<li> Springer Empirical Software Engineering (EMSE) journal
+				<li> ACM Transactions on Software Engineering (TOSEM) journal
+				<li> Journal of Systems and Software (JSS)
+				<li> Journal of Software: Practice and Experience (SPE)
+				<li> PeerJ Computer Science journal
+				<li> IEEE Transactions on Services Computing (TSC) journal
+				<li> IEEE Transactions on Systems, Man and Cybernetics: Systems (SMCA) journal
+				<li> ACM Transactions on the Web (TWEB) journal
+				<li> Software Testing, Verification and Reliability (STVR)
 			</ul>
 		</div>		
 		
 	</div>
   </div>
   
-  <div class="w3-white" id="awards">	
-	<div class="w3-container w3-content w3-center w3-padding-32 w3-large" style="max-width:1080px">
+  <div class="w3-content" id="awards">
+	<div class="w3-container w3-center w3-large">
 		
 		<h2 class="w3-wide w3-center w3-montserrat"><b style="color:#488AC7">AWARDS</b></h2>
 		<div class="w3-justify">	
@@ -332,16 +337,13 @@ li{
 
   <!-- The Contact Section -->
   
-  <div class="w3-white" id="contact">	
-  <div class="w3-container w3-content w3-padding-32" style="max-width:1080px">
+  <div class="w3-content" id="contact">
+  <div class="w3-container">
     <h2 class="w3-wide w3-center w3-montserrat"><b style="color:#488AC7">CONTACT</b></h2>
-    
-		<div class="w3-large">
-			<a href="https://www.queensu.ca">Queen's University</a><br>
-			<a href="https://sail.cs.queensu.ca">Software Analysis and Intelligence Lab (SAIL)</a><br>
-			<i class="fa fa-map-marker" style="width:30px"></i> <a href="https://goo.gl/maps/85B2Vv6deLsfmfYp7">Kingston, Ontario, Canada</a> <br>
-			<i class="fa fa-envelope" style="width:30px"> </i> Email: gustavo@cs.queensu.ca<br>
-			<i class="fab fa-linkedin" style="width:30px"> </i> Find me on <a href="https://www.linkedin.com/in/gustavo-ansaldi-oliva-22097753/">Linkedin</a>			
+
+		<div>
+			<i class="fa fa-envelope" style="width:30px"> </i> Email: [first_name]@cs.queensu.ca<br>
+			<i class="fab fa-linkedin" style="width:30px"> </i> Find me on <a href="https://www.linkedin.com/in/gustavo-ansaldi-oliva-22097753/">Linkedin</a>
 		</div>
 	      
   </div>
@@ -349,43 +351,7 @@ li{
   
  </div>
 
-  
 <!-- End Page Content -->
-
-
-<!-- Add Google Maps 
-<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
-<script>
-function myMap() {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
-<!-- Footer
-<footer class="w3-center w3-opacity w3-grey w3-xlarge">
-  <p> Find me on social networks </p>
-  <a href="https://www.facebook.com/gustavo.ansaldi.oliva"><i class="fa fa-facebook-official fa-2x w3-hover-text-indigo"></i></a>
-  <i class="fa fa-twitter fa-2x w3-hover-text-light-blue"></i>
-  <a href="https://www.linkedin.com/in/gustavo-ansaldi-oliva-22097753"><i class="fa fa-linkedin fa-2x w3-hover-text-indigo"></i></a>
-  <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
--->
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -393,10 +359,144 @@ function myFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else { 
+    } else {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+// Publication view toggle and dynamic "By Year" generation
+document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('.tab-button');
+  const byTypeView = document.getElementById('view-by-type');
+  const byYearView = document.getElementById('view-by-year');
+
+  // Venue to type mapping
+  const venueTypes = {
+    // Journals
+    'EMSE': 'Journal', 'TSE': 'Journal', 'TOSEM': 'Journal', 'JSS': 'Journal',
+    'SOCA': 'Journal', 'CAI': 'Journal', 'IJWSR': 'Journal', 'LATAM': 'Journal',
+    'ARXIV': 'Journal',
+    // Conferences
+    'ICSE': 'Conference', 'FSE': 'Conference', 'ASE': 'Conference',
+    'ESEC/FSE': 'Conference', 'MSR': 'Conference', 'MODELS': 'Conference',
+    'ISSRE': 'Conference', 'OSS': 'Conference', 'CRIWG': 'Conference',
+    'ICWS': 'Conference', 'CSMR': 'Conference', 'SANER': 'Conference',
+    // Workshops
+    'SE2030': 'Workshop', 'MTD': 'Workshop', 'IWPSE': 'Workshop', 'SQM': 'Workshop',
+    // Books
+    'BOOK': 'Book Chapter'
+  };
+
+  // Build "By Year" view dynamically
+  function buildByYearView() {
+    if (byYearView.children.length > 0) return; // Already built
+
+    // Collect all publications
+    const allPubs = [];
+    const lists = byTypeView.querySelectorAll('ol');
+
+    lists.forEach(list => {
+      const items = list.querySelectorAll('li');
+      items.forEach(item => {
+        const boldText = item.querySelector('b');
+        if (!boldText) return;
+
+        // Parse [VENUE YY] prefix
+        const match = boldText.textContent.match(/^\[([A-Z0-9\/]+)\s+(\d{2})\]/);
+        if (!match) return;
+
+        const venue = match[1];
+        const year = '20' + match[2];
+        const type = venueTypes[venue] || 'Conference'; // Default to Conference
+
+        allPubs.push({
+          year: parseInt(year),
+          type: type,
+          element: item.cloneNode(true)
+        });
+      });
+    });
+
+    // Sort by year (descending)
+    allPubs.sort((a, b) => b.year - a.year);
+
+    // Group by year and build HTML
+    let currentYear = null;
+    let currentList = null;
+    let currentDiv = null;
+
+    allPubs.forEach(pub => {
+      if (pub.year !== currentYear) {
+        // New year section
+        const yearHeader = document.createElement('h3');
+        yearHeader.className = 'w3-left-align w3-montserrat';
+        yearHeader.textContent = pub.year;
+        byYearView.appendChild(yearHeader);
+
+        currentDiv = document.createElement('div');
+        currentDiv.className = 'w3-justify';
+        byYearView.appendChild(currentDiv);
+
+        currentList = document.createElement('ol');
+        currentList.setAttribute('reversed', '');
+        currentDiv.appendChild(currentList);
+
+        currentYear = pub.year;
+      }
+
+      // Add type badge to publication
+      const badge = document.createElement('span');
+      badge.className = `pub-type-badge pub-${pub.type.toLowerCase().replace(' ', '-')}`;
+      badge.textContent = pub.type;
+
+      const boldTag = pub.element.querySelector('b');
+      if (boldTag) {
+        boldTag.insertAdjacentElement('beforebegin', badge);
+      }
+
+      currentList.appendChild(pub.element);
+    });
+  }
+
+  // Tab switching
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const targetView = this.getAttribute('data-view');
+
+      // Update tabs
+      tabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      this.classList.add('active');
+      this.setAttribute('aria-selected', 'true');
+
+      // Build by-year view if switching to it
+      if (targetView === 'by-year') {
+        buildByYearView();
+      }
+
+      // Switch views
+      if (targetView === 'by-type') {
+        byTypeView.style.display = 'block';
+        byYearView.style.display = 'none';
+      } else {
+        byTypeView.style.display = 'none';
+        byYearView.style.display = 'block';
+      }
+
+      // Save preference
+      localStorage.setItem('preferredPublicationView', targetView);
+    });
+  });
+
+  // Load saved preference
+  const savedView = localStorage.getItem('preferredPublicationView');
+  if (savedView) {
+    const savedTab = document.querySelector(`[data-view="${savedView}"]`);
+    if (savedTab) savedTab.click();
+  }
+});
 </script>
 
 <script>
