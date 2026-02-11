@@ -81,6 +81,7 @@
 	<div class="w3-container w3-center w3-large">
 		<h2 class="w3-wide w3-center w3-montserrat"><b style="color:#488AC7">PUBLICATIONS</b></h2>
 		<!--<h6 class="w3-center w3-montserrat">(citations: 253, h-index: 10, i10-index: 10)</h6>-->
+		<p class="w3-center" style="color: #999; font-size: 0.85rem; margin: -0.5rem 0 1rem 0; opacity: 0.8;">Last 10 years</p>
 
 		<!-- Tab Toggle UI -->
 		<div class="publications-toggle" role="tablist">
@@ -370,6 +371,53 @@ document.addEventListener('DOMContentLoaded', function() {
   const byTypeView = document.getElementById('view-by-type');
   const byYearView = document.getElementById('view-by-year');
 
+  // Calculate year cutoff (current year - 10)
+  const currentYear = new Date().getFullYear();
+  const cutoffYear = currentYear - 10;
+
+  // Hide publications older than 10 years in "By Type" view
+  function hideOldPublications() {
+    const lists = byTypeView.querySelectorAll('ol');
+    lists.forEach(list => {
+      const items = list.querySelectorAll('li');
+      let visibleCount = 0;
+
+      items.forEach(item => {
+        const boldText = item.querySelector('b');
+        if (!boldText) return;
+
+        // Parse [VENUE YY] prefix
+        const match = boldText.textContent.match(/^\[([A-Z0-9\/]+)\s+(\d{2})\]/);
+        if (!match) return;
+
+        const year = parseInt('20' + match[2]);
+
+        // Hide if older than cutoff
+        if (year < cutoffYear) {
+          item.style.display = 'none';
+        } else {
+          visibleCount++;
+        }
+      });
+
+      // If no visible publications in this section, hide the entire section
+      if (visibleCount === 0) {
+        const section = list.closest('div.w3-justify');
+        if (section) {
+          section.style.display = 'none';
+          // Also hide the h3 header before this section
+          const header = section.previousElementSibling;
+          if (header && header.tagName === 'H3') {
+            header.style.display = 'none';
+          }
+        }
+      }
+    });
+  }
+
+  // Run on page load
+  hideOldPublications();
+
   // Venue to type mapping
   const venueTypes = {
     // Journals
@@ -406,14 +454,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!match) return;
 
         const venue = match[1];
-        const year = '20' + match[2];
+        const year = parseInt('20' + match[2]);
         const type = venueTypes[venue] || 'Conference'; // Default to Conference
 
-        allPubs.push({
-          year: parseInt(year),
-          type: type,
-          element: item.cloneNode(true)
-        });
+        // Only include publications from the last 10 years
+        if (year >= cutoffYear) {
+          allPubs.push({
+            year: year,
+            type: type,
+            element: item.cloneNode(true)
+          });
+        }
       });
     });
 
