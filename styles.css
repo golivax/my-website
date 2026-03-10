@@ -76,8 +76,17 @@ body {
   letter-spacing: 1px;
 }
 
+#intro .w3-row {
+  display: flex;
+  align-items: center;
+}
+
 #intro img {
   border-radius: 50% !important;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center 0%;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
 }
